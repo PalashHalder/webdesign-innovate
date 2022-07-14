@@ -1,0 +1,83 @@
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
+
+/* =======================
+        Navbar Starts
+======================= */
+
+nav{
+    background: #000;
+}
+
+.navbar__item{
+    margin-left: 30px;
+    position: relative;
+}
+
+.navbar__item--margin{
+    margin-right: 125px;
+}
+
+.navbar__link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white !important;
+}
+
+.navbar__link--button{
+    background: #fff !important;
+    padding: 14px 28px !important;
+    border-radius: 5px;
+    color: #000 !important;
+}
+
+.navbar__link--font{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    font-weight: 500;
+}
+.navbar__link i{
+    margin-left: 8px;
+}
+
+.navbar__drop{
+    position: absolute;
+    top: 72px;
+    left: -20px;
+    background: #000;
+    width: 130px;
+    padding: 20px 20px 20px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    transform: rotateX(-90deg);
+    transform-origin: top left;
+    transition: .4s ease;
+}
+
+.navbar__dropitem{
+    margin: 10px 0;
+}
+
+.navbar__droplink{
+    color: #fff;
+    transition: .4s ease;
+}
+
+.navbar__droplink:hover{
+    color: #52C5B6;
+}
+
+.navbar__item:hover .navbar__drop{
+    transform: rotateX(0);
+}
+/* =======================
+        Navbar Ends
+======================= */
