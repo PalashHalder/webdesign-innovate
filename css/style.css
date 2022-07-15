@@ -7,12 +7,35 @@ ul,ol{
     padding: 0;
 }
 
+/* =============================
+        Common CSS Starts
+============================== */
+.button{
+    padding: 14px 28px;
+    background: #FD5F36;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 40px;
+}
+/* =============================
+        Common CSS Ends
+============================= */
+
 /* =======================
         Navbar Starts
 ======================= */
 
 nav{
-    background: #000;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
 }
 
 .navbar__item{
@@ -80,4 +103,110 @@ nav{
 }
 /* =======================
         Navbar Ends
+======================= */
+/* =======================
+        Banner Starts
+======================= */
+#bannerPart{
+    background: #30344E;
+    position: relative;
+    overflow: hidden;
+    padding-top: 201px;
+    padding-bottom: 92px;
+}
+
+.bannerPart__heading{
+    font-family: 'Poppins', sans-serif;
+    font-size:60px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 644px;
+    line-height: 74px;
+    letter-spacing: -1%;
+}
+
+.bannerPart__text{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 540px;
+    line-height: 32px;
+    margin-top: 24px;
+}
+
+.bannerPart__question{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bannerPart_signup{
+    font-weight: 700;
+    color: #52C5B6;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.bannerPart__shape{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50% - 89px);
+}
+
+.bannerPart__arrow{
+    position: absolute;
+    top: -75px;
+    right: -39px;
+    animation: updown 1s infinite linear alternate;
+}
+
+@keyframes updown{
+    from{
+        top: -80px;
+    }to{
+        top: -75px;
+    }
+}
+
+.bannerShape__rightRound{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -75px;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.bannerShape__innerRound{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 63px;
+    left: -12px;
+}
+
+.bannerPart__human{
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+/* =======================
+        Banner Ends
 ======================= */
